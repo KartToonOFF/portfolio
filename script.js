@@ -24,12 +24,12 @@ const ABOUT_CHIPS = [
   [IS_ENGLISH ? "Application Development" : "Développement d'applications", "yellow"]
 ];
 
-const CORE = [
-  ["shield-scale", IS_ENGLISH ? "Scalability" : "Évolutivité", IS_ENGLISH ? "Creating consistent, optimized systems that perform well under load" : "Créer des systèmes cohérents et optimisés qui restent performants sous charge"],
-  ["lock", IS_ENGLISH ? "Security" : "Sécurité", IS_ENGLISH ? "Building systems with security as a priority" : "Concevoir des systèmes où la sécurité est une priorité"],
-  ["chat", IS_ENGLISH ? "Communication" : "Communication", IS_ENGLISH ? "Building connections and communicating effectively with others" : "Créer du lien et communiquer efficacement avec les autres"],
-  ["wrench", IS_ENGLISH ? "Engineering" : "Ingénierie", IS_ENGLISH ? "Designing and testing systems in a disciplined and timely manner" : "Concevoir et tester des systèmes avec méthode et efficacité"]
-];
+// const CORE = [
+//   ["shield-scale", IS_ENGLISH ? "Scalability" : "Évolutivité", IS_ENGLISH ? "Creating consistent, optimized systems that perform well under load" : "Créer des systèmes cohérents et optimisés qui restent performants sous charge"],
+//   ["lock", IS_ENGLISH ? "Security" : "Sécurité", IS_ENGLISH ? "Building systems with security as a priority" : "Concevoir des systèmes où la sécurité est une priorité"],
+//   ["chat", IS_ENGLISH ? "Communication" : "Communication", IS_ENGLISH ? "Building connections and communicating effectively with others" : "Créer du lien et communiquer efficacement avec les autres"],
+//   ["wrench", IS_ENGLISH ? "Engineering" : "Ingénierie", IS_ENGLISH ? "Designing and testing systems in a disciplined and timely manner" : "Concevoir et tester des systèmes avec méthode et efficacité"]
+// ];
 
 // [name, filled dots (0-5)]
 const SKILLS = [
@@ -124,8 +124,8 @@ function render() {
 
   // about
   el("aboutChips").innerHTML = ABOUT_CHIPS.map(([t, c]) => `<div class="chip ${c}">${esc(t)}</div>`).join("");
-  el("coreGrid").innerHTML = CORE.map(([i, t, d], n) =>
-    `<div class="core-card reveal" style="animation-delay:${n * 0.1}s"><div class="core-icon">${icon(i, 32)}</div><h4>${t}</h4><p>${d}</p></div>`).join("");
+  // el("coreGrid").innerHTML = CORE.map(([i, t, d], n) =>
+  //   `<div class="core-card reveal" style="animation-delay:${n * 0.1}s"><div class="core-icon">${icon(i, 32)}</div><h4>${t}</h4><p>${d}</p></div>`).join("");
 
   // skills
   el("skillGroups").innerHTML = SKILLS.map((g, n) => {
