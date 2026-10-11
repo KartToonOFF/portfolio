@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Arthur Gacon Lagaye - second-year computer science student">
+  <title>Arthur Gacon Lagaye | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <div class="brand">Arthur Gacon Lagaye</div>
+      <div class="nav-links" id="navLinks"></div>
+      <a class="btn btn-outline btn-sm language-link" href="index.html" lang="fr" aria-label="Passer en français">Français</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 12h16" />
+          <path d="M4 18h16" />
+          <path d="M4 6h16" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"></div>
+  </nav>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-inner fade-up">
+        <div class="badge badge-green">Looking for an internship</div>
+        <h1>Hello, I'm <span class="accent">Arthur Gacon Lagaye</span>.</h1>
+        <p class="hero-sub">I am a second-year computer science student at Paul Sabatier University Institute of Technology in Castres.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="btnResume" href="#"><span data-icon="file"></span>Resume</a>
+          <a class="btn btn-outline" id="btnGithub" href="#" target="_blank" rel="noopener"><span
+              data-icon="github"></span>GitHub</a>
+          <a class="btn btn-outline" id="btnLinkedin" href="#" target="_blank" rel="noopener"><span
+              data-icon="linkedin"></span>LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About me</h2>
+        <p class="section-sub">A short introduction.</p>
+        <div class="chips chips-lg" id="aboutChips"></div>
+        <p class="about-text">I am a computer science student looking to develop my skills and create video games or pursue a career in cybersecurity.</p>
+        <h3 class="sub-title">Core skills</h3>
+        <div class="core-grid" id="coreGrid"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <p class="section-sub">Here are most of my skills.</p>
+        <div class="skill-groups" id="skillGroups"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <!-- <section id="experience" class="section">
+      <div class="container narrow">
+        <div class="section-tag"><span>Experience</span></div>
+        <h2>Professional Journey</h2>
+        <p class="section-sub">Here's how my skills derived value.</p>
+        <div class="timeline" id="experienceList"></div>
+      </div>
+    </section> -->
+
+    <!-- PROJECTS -->
+    <!-- <section id="projects" class="section alt">
+      <div class="container">
+        <div class="section-tag"><span>Projects</span></div>
+        <h2>Systems I Built</h2>
+        <p class="section-sub">Here's what I've created.</p>
+        <div class="project-grid" id="projectGrid"></div>
+        <div class="center"><a class="btn btn-outline" id="btnMore" href="#" target="_blank" rel="noopener">Load more
+            projects</a></div>
+      </div>
+    </section> -->
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container narrow">
+        <h2>Education</h2>
+        <p class="section-sub">How I acquired these skills.</p>
+        <div class="timeline" id="educationList"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container narrow">
+        <h2>Contact me</h2>
+        <div class="contact-wrap">
+          <div class="contact-icon"><span data-icon="mail-lg"></span></div>
+          <div class="contact-links">
+            <a class="contact-card" id="cGithub" href="#" target="_blank" rel="noopener">
+              <span class="ci" data-icon="github"></span>
+              <span><strong>GitHub</strong><small>View my projects</small></span>
+            </a>
+            <a class="contact-card" id="cLinkedin" href="#" target="_blank" rel="noopener">
+              <span class="ci" data-icon="linkedin"></span>
+              <span><strong>LinkedIn</strong><small>View my profile</small></span>
+            </a>
+            <a class="contact-card" id="cEmail" href="#">
+              <span class="ci" data-icon="mail"></span>
+              <span><strong>Email</strong><small>Send me an email</small></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Arthur Gacon Lagaye</h3>
+        <p>Student • Computer Science • Application Development</p>
+      </div>
+      <div class="footer-right">
+        <div>© <span id="year">2026</span> Arthur Gacon Lagaye. All rights reserved.</div>
+        <div class="bulb">💡</div>
+        <button class="btn btn-outline btn-sm" id="toTop"><span data-icon="up"></span>Back to top</button>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
