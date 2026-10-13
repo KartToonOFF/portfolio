@@ -176,7 +176,8 @@ function render() {
 
 function wireLinks() {
   const set = (id, href) => { const a = el(id); if (a) a.href = href; };
-  set("btnResume", LINKS.resume); set("btnGithub", LINKS.github); set("btnLinkedin", LINKS.linkedin);
+  // set("btnResume", LINKS.resume);
+  set("btnGithub", LINKS.github); set("btnLinkedin", LINKS.linkedin);
   set("cGithub", LINKS.github); set("cLinkedin", LINKS.linkedin); set("cEmail", LINKS.email);
   set("btnTalk", LINKS.talk); set("btnMore", LINKS.moreProjects);
 }
